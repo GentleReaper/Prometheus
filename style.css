@@ -4,14 +4,24 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
+h1{
+    margin-top: 10px;
+    padding: 0px;
+}
+h3{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
 #logo{
-    height: 80px;
-    width: 50px;
+    height: 90px;
+    width: 70px;
     margin-left: 5px;
-    border: 3px rgb(134, 0, 0) solid;
-    border-radius: 30px;
+    border: 3px rgba(134, 0, 0, 0.744) solid;
+    border-radius: 300px;
 }
 ul{
     padding-top: 15px;
