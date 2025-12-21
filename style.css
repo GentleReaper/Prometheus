@@ -40,5 +40,8 @@ body{
     text-align: center;
 }
 ul a:hover{
-    text-decoration: underline;
+    color: rgb(249, 64, 64);
+}
+#img1{
+    width: 100%;
 }
