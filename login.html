@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Phoenix Donation</title>
+    <link rel="shortcut icon" href="images/Heart.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div><img id="logo" src="images/Heart.jpeg" alt="Phoenix Donation logo - heart symbol"></div>
+        <div class="brand-text">
+            <h1>PHOENIX DONATION</h1>
+            <h3>"You Give, They Live."</h3>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="signup-box">
+            <h2>Welcome Back</h2>
+            <form id="loginForm">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+
+                <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #ccc;">
+                    Don't have an account? <a href="signup.html"
+                        style="color: var(--accent-red); text-decoration: underline;">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Phoenix Donation. All rights reserved.</p>
+        <p>Contact: info@phoenixdonation.org | +254-700-123-456</p>
+    </footer>
+
+    <!-- Link to Authentication Script -->
+    <script src="auth.js"></script>
+</body>
+
+</html>

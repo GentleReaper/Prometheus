@@ -1,104 +1,39 @@
-/* General page styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(63, 1, 1); /* deep red background */
-  color: white;
-  margin: 0;
-}
+/* =========================================
+   ABOUT PAGE STYLING
+   ========================================= */
 
-/* Header */
-header {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 2px;
-}
-header h3 {
-  margin: 5px 0 0;
-  font-style: italic;
-  color: #f9b4b4;
-}
-#logo {
-  height: 70px;
-  width: 70px;
-  border: 3px solid #e63946;
-  border-radius: 50%;
-}
-
-/* Navigation */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-nav a {
-  text-decoration: none;
-  color: white;
-  padding: 8px;
-}
-nav a:hover {
-  color: rgb(249, 64, 64);
-}
-
-/* About section */
 .about {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 25px;
-  background-color: #222;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  /* Using default section styling from style.css */
   text-align: left;
 }
-.about h2 {
-  color: #f9b4b4;
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 .about h3 {
-  color: rgb(249, 64, 64);
-  margin-top: 20px;
+  color: var(--text-main);
+  margin-top: 30px;
+  font-size: 1.5rem;
+  border-left: 4px solid var(--accent-red);
+  padding-left: 15px;
 }
-.about p, .about ul {
-  line-height: 1.6;
-}
+
 .about ul {
-  list-style: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  /* Reset default list */
+  padding-left: 20px;
+  margin-top: 15px;
 }
 
-/* Footer */
-footer {
-  background-color: black;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #ccc;
+.about ul li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .about {
-    width: 90%;
-    padding: 15px;
-  }
+.about ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-red);
+  font-weight: bold;
 }
